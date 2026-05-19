@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahmoud Mohammed Mostafa | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Distinctive font pairing: Space Mono (monospace terminal) + Syne (bold display) -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== LOADING SCREEN ========== -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">M<span>.</span></div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+      <div class="loader-text">Initializing...</div>
+    </div>
+  </div>
+
+  <!-- ========== CURSOR ========== -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">M<span class="accent">.</span>M</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section id="hero">
+    <!-- Animated grid background -->
+    <div class="hero-grid"></div>
+    <!-- Floating orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="hero-container">
+      <div class="hero-content">
+        <!-- Status badge -->
+        <div class="status-badge reveal-up">
+          <span class="status-dot"></span>
+          <span>Available for opportunities</span>
+        </div>
+
+        <h1 class="hero-name reveal-up">
+          <span class="name-line">Mahmoud</span>
+          <span class="name-line name-accent">Mohammed</span>
+          <span class="name-line">Mostafa</span>
+        </h1>
+
+        <!-- Typing effect container -->
+        <div class="hero-titles reveal-up">
+          <span class="prefix-text">&gt; </span>
+          <span class="typed-text" id="typedText"></span>
+          <span class="cursor-blink">|</span>
+        </div>
+
+        <p class="hero-bio reveal-up">
+          A passionate Computer Science student at Lotus University, driven by the art of building
+          beautiful, functional web experiences. Currently sharpening my frontend skills through
+          GDG Minya's intensive development course — turning ideas into interactive reality.
+        </p>
+
+        <div class="hero-btns reveal-up">
+          <a href="cv.pdf" download class="btn btn-primary">
+            <span class="btn-icon">↓</span>
+            Download CV
+          </a>
+          <a href="#projects" class="btn btn-outline">
+            View Projects
+            <span class="btn-arrow">→</span>
+          </a>
+        </div>
+
+        <!-- Quick stats -->
+        <div class="hero-stats reveal-up">
+          <div class="stat">
+            <span class="stat-num">3.2</span>
+            <span class="stat-label">GPA / 4.0</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">8+</span>
+            <span class="stat-label">Skills</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profile image -->
+      <div class="hero-visual reveal-right">
+        <div class="profile-frame">
+          <div class="profile-glow"></div>
+          <div class="profile-img">
+            <img src="profile.jpg" alt="Mahmoud Mohammed Mostafa" class="profile-real-img" />
+          </div>
+          <!-- Corner decorations -->
+          <div class="frame-corner fc-tl"></div>
+          <div class="frame-corner fc-tr"></div>
+          <div class="frame-corner fc-bl"></div>
+          <div class="frame-corner fc-br"></div>
+          <!-- Floating tags -->
+          <div class="float-tag ft-1">
+            <span class="ft-icon">⚡</span> Frontend Dev
+          </div>
+          <div class="float-tag ft-2">
+            <span class="ft-icon">🎓</span> CS Student
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// 01</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal-up">
+          <p class="about-lead">
+            I'm a first-year <strong>Computer Science student</strong> at Lotus University's
+            Faculty of Computers and Information, with a GPA of <strong class="accent">3.2 / 4.0</strong>.
+          </p>
+          <p>
+            My passion lives at the intersection of logic and creativity — which is exactly
+            what frontend development offers. I love transforming designs into living, breathing
+            web experiences that users actually enjoy interacting with.
+          </p>
+          <p>
+            Currently enrolled in <strong>GDG Minya's Frontend Development Course</strong>,
+            where I've been deepening my understanding of HTML5, CSS3, JavaScript, and responsive
+            design principles — and pushing myself beyond coursework with personal projects.
+          </p>
+          <p>
+            My goal: to grow into a professional frontend developer who contributes to
+            meaningful, impactful products — while never stopping learning.
+          </p>
+        </div>
+
+        <div class="about-cards reveal-right">
+          <!-- Info cards -->
+          <div class="info-card glass">
+            <div class="ic-icon">🎓</div>
+            <div class="ic-content">
+              <span class="ic-label">University</span>
+              <span class="ic-value">Lotus University</span>
+            </div>
+          </div>
+          <div class="info-card glass">
+            <div class="ic-icon">📊</div>
+            <div class="ic-content">
+              <span class="ic-label">GPA</span>
+              <span class="ic-value accent">3.2 / 4.0</span>
+            </div>
+          </div>
+          <div class="info-card glass">
+            <div class="ic-icon">📍</div>
+            <div class="ic-content">
+              <span class="ic-label">Location</span>
+              <span class="ic-value">Minya, Egypt</span>
+            </div>
+          </div>
+          <div class="info-card glass">
+            <div class="ic-icon">🚀</div>
+            <div class="ic-content">
+              <span class="ic-label">Focus</span>
+              <span class="ic-value">Frontend Dev</span>
+            </div>
+          </div>
+          <div class="info-card glass">
+            <div class="ic-icon">📅</div>
+            <div class="ic-content">
+              <span class="ic-label">Year</span>
+              <span class="ic-value">2024 – Present</span>
+            </div>
+          </div>
+          <div class="info-card glass">
+            <div class="ic-icon">✨</div>
+            <div class="ic-content">
+              <span class="ic-label">Training</span>
+              <span class="ic-value">GDG Minya</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS SECTION ========== -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// 02</span>
+        <h2 class="section-title">Skills</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- Skill Card: HTML -->
+        <div class="skill-card glass reveal-up" data-delay="0">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 3L5.5 19.5L12 21.5L18.5 19.5L20 3H4Z" stroke="currentColor" stroke-width="1.5"/><path d="M16 7H8L8.5 12H15.5L15 16L12 17L9 16L8.8 14H7L7.3 17.5L12 19L16.7 17.5L17.5 7H16Z" fill="currentColor" opacity="0.7"/></svg>
+          </div>
+          <div class="skill-info">
+            <h3>HTML5</h3>
+            <span class="skill-cat">Markup</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="85">
+              <div class="skill-fill"></div>
+            </div>
+            <span class="skill-pct">85%</span>
+          </div>
+        </div>
+
+        <!-- Skill Card: CSS -->
+        <div class="skill-card glass reveal-up" data-delay="50">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 3L5.5 19.5L12 21.5L18.5 19.5L20 3H4Z" stroke="currentColor" stroke-width="1.5"/><path d="M17 7H7L7.2 9H14.8L14.4 13H9.6L9.8 11H7.9L7.5 15.5L12 17L16.5 15.5L17 7Z" fill="currentColor" opacity="0.7"/></svg>
+          </div>
+          <div class="skill-info">
+            <h3>CSS3</h3>
+            <span class="skill-cat">Styling</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="80">
+              <div class="skill-fill"></div>
+            </div>
+            <span class="skill-pct">80%</span>
+          </div>
+        </div>
+
+        <!-- Skill Card: JavaScript -->
+        <div class="skill-card glass reveal-up" data-delay="100">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M9 16.5C9 17.3 9.4 18 10.5 18C11.6 18 12 17.3 12 16.5V11H10V16.5ZM14 15.5C14.1 16.5 14.9 18 16.5 18C18.1 18 18.9 16.8 18.9 15.5C18.9 14.1 18.1 13.5 16.8 13L16.2 12.8C15.5 12.5 15.2 12.3 15.2 11.8C15.2 11.3 15.6 11 16.1 11C16.6 11 16.9 11.3 17.1 12L18.7 11.5C18.4 10.3 17.6 9.5 16.1 9.5C14.6 9.5 13.5 10.5 13.5 11.9C13.5 13.1 14.2 13.8 15.3 14.2L16 14.5C16.8 14.8 17.1 15.1 17.1 15.7C17.1 16.3 16.6 16.7 15.9 16.7C15 16.7 14.5 16.1 14.3 15.2L14 15.5Z" fill="currentColor"/></svg>
+          </div>
+          <div class="skill-info">
+            <h3>JavaScript</h3>
+            <span class="skill-cat">Programming</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="70">
+              <div class="skill-fill"></div>
+            </div>
+            <span class="skill-pct">70%</span>
+          </div>
+        </div>
+
+        <!-- Skill Card: C++ -->
+        <div class="skill-card glass reveal-up" data-delay="150">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><text x="6" y="16" font-family="monospace" font-size="8" fill="currentColor">C++</text></svg>
+          </div>
+          <div class="skill-info">
+            <h3>C++</h3>
+            <span class="skill-cat">Programming</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="65">
+              <div class="skill-fill"></div>
+            </div>
+            <span class="skill-pct">65%</span>
+          </div>
+        </div>
+
+        <!-- Skill Card: C# -->
+        <div class="skill-card glass reveal-up" data-delay="200">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><text x="5.5" y="16" font-family="monospace" font-size="8" fill="currentColor">C#</text></svg>
+          </div>
+          <div class="skill-info">
+            <h3>C#</h3>
+            <span class="skill-cat">Programming</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="55">
+              <div class="skill-fill"></div>
+            </div>
+            <span class="skill-pct">55%</span>
+          </div>
+        </div>
+
+        <!-- Skill Card: Python -->
+        <div class="skill-card glass reveal-up" data-delay="250">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 2C9.2 2 7 3.3 7 5V8H12V9H5C3.3 9 2 10.8 2 13C2 15.2 3.3 17 5 17H7V14C7 12.3 9.2 11 12 11C14.8 11 17 12.3 17 14V17H19C20.7 17 22 15.2 22 13C22 10.8 20.7 9 19 9H17V5C17 3.3 14.8 2 12 2Z" stroke="currentColor" stroke-width="1.3" fill="none"/></svg>
+          </div>
+          <div class="skill-info">
+            <h3>Python</h3>
+            <span class="skill-cat">Programming</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="60">
+              <div class="skill-fill"></div>
+            </div>
+            <span class="skill-pct">60%</span>
+          </div>
+        </div>
+
+        <!-- Skill Card: Git -->
+        <div class="skill-card glass reveal-up" data-delay="300">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="18" cy="6" r="2.5" stroke="currentColor" stroke-width="1.5"/><circle cx="6" cy="6" r="2.5" stroke="currentColor" stroke-width="1.5"/><circle cx="6" cy="18" r="2.5" stroke="currentColor" stroke-width="1.5"/><path d="M8.5 6H13M6 8.5V15.5M13 6C13 7.7 14.3 9 16 9H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <div class="skill-info">
+            <h3>Git & GitHub</h3>
+            <span class="skill-cat">Version Control</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="72">
+              <div class="skill-fill"></div>
+            </div>
+            <span class="skill-pct">72%</span>
+          </div>
+        </div>
+
+        <!-- Skill Card: MS Office -->
+        <div class="skill-card glass reveal-up" data-delay="350">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="8" height="8" rx="1.5" stroke="currentColor" stroke-width="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5" stroke="currentColor" stroke-width="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5" stroke="currentColor" stroke-width="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <div class="skill-info">
+            <h3>MS Office</h3>
+            <span class="skill-cat">Productivity</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="90">
+              <div class="skill-fill"></div>
+            </div>
+            <span class="skill-pct">90%</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS SECTION ========== -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// 03</span>
+        <h2 class="section-title">Projects</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: Portfolio Page -->
+        <div class="project-card glass reveal-up" data-delay="0">
+          <div class="project-preview">
+            <div class="project-mockup pm-1">
+              <div class="pm-bar"><span></span><span></span><span></span></div>
+              <div class="pm-content">
+                <div class="pm-line w80"></div>
+                <div class="pm-line w60 accent-line"></div>
+                <div class="pm-line w90"></div>
+                <div class="pm-cols">
+                  <div class="pm-block"></div>
+                  <div class="pm-lines">
+                    <div class="pm-line w70"></div>
+                    <div class="pm-line w50"></div>
+                    <div class="pm-line w80"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-num">01</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Personal Portfolio Page</h3>
+            <p class="project-desc">
+              Built a personal webpage using HTML and CSS as a course assignment,
+              showcasing layout skills and semantic structure.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">HTML</span>
+              <span class="tech-badge">CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://mahmouedmostafa1234-create.github.io/Task_9/" target="_blank" rel="noopener" class="project-btn">
+                Live Demo <span>↗</span>
+              </a>
+              <a href="https://github.com/mahmouedmostafa1234-create" target="_blank" rel="noopener" class="project-btn project-btn-ghost">
+                GitHub <span>↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Frontend Task -->
+        <div class="project-card glass reveal-up" data-delay="100">
+          <div class="project-preview">
+            <div class="project-mockup pm-2">
+              <div class="pm-bar"><span></span><span></span><span></span></div>
+              <div class="pm-content">
+                <div class="pm-line w60 accent-line"></div>
+                <div class="pm-btn-row">
+                  <div class="pm-btn"></div>
+                  <div class="pm-btn pm-btn-outline"></div>
+                </div>
+                <div class="pm-line w90"></div>
+                <div class="pm-line w70"></div>
+                <div class="pm-cards-row">
+                  <div class="pm-card-sm"></div>
+                  <div class="pm-card-sm"></div>
+                  <div class="pm-card-sm"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-num">02</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Frontend Task Project</h3>
+            <p class="project-desc">
+              Developed a web page applying JavaScript interactivity and CSS styling,
+              demonstrating dynamic DOM manipulation and responsive layouts.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">HTML</span>
+              <span class="tech-badge">CSS</span>
+              <span class="tech-badge">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://mahmouedmostafa1234-create.github.io/Task_10/" target="_blank" rel="noopener" class="project-btn">
+                Live Demo <span>↗</span>
+              </a>
+              <a href="https://github.com/mahmouedmostafa1234-create" target="_blank" rel="noopener" class="project-btn project-btn-ghost">
+                GitHub <span>↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Calculator (C++) -->
+        <div class="project-card glass reveal-up" data-delay="200">
+          <div class="project-preview">
+            <div class="project-mockup pm-3">
+              <div class="pm-bar"><span></span><span></span><span></span></div>
+              <div class="pm-content pm-terminal">
+                <div class="pm-terminal-line"><span class="t-green">&gt;</span> Calculator v1.0</div>
+                <div class="pm-terminal-line"><span class="t-cyan">Enter expression:</span></div>
+                <div class="pm-terminal-line"><span class="t-white">12 + 8 = </span><span class="t-green">20</span></div>
+                <div class="pm-terminal-line"><span class="t-white">45 * 3 = </span><span class="t-green">135</span></div>
+                <div class="pm-terminal-line"><span class="t-cyan">_</span></div>
+              </div>
+            </div>
+            <div class="project-num">03</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Calculator Program</h3>
+            <p class="project-desc">
+              Console-based calculator covering all arithmetic operations, built in C++
+              to reinforce fundamentals of programming logic and problem-solving.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">C++</span>
+              <span class="tech-badge">OOP</span>
+              <span class="tech-badge">Console</span>
+            </div>
+            <div class="project-links">
+              <span class="project-btn project-btn-disabled">Console App</span>
+              <a href="https://github.com/mahmouedmostafa1234-create" target="_blank" rel="noopener" class="project-btn project-btn-ghost">
+                GitHub <span>↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION SECTION ========== -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// 04</span>
+        <h2 class="section-title">Education</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-line"></div>
+          <div class="timeline-content glass">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-title">Lotus University</h3>
+                <p class="tl-sub">Faculty of Computers and Information</p>
+              </div>
+              <div class="tl-date">2024 – Present</div>
+            </div>
+            <p class="tl-degree">B.Sc. Computer Science <span class="accent">· GPA 3.2/4.0</span></p>
+            <div class="tl-courses">
+              <span class="course-tag">Introduction to Programming</span>
+              <span class="course-tag">Problem Solving</span>
+              <span class="course-tag">Computer Fundamentals</span>
+              <span class="course-tag">Discrete Mathematics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE SECTION ========== -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// 05</span>
+        <h2 class="section-title">Experience & Training</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="exp-card glass reveal-up">
+        <div class="exp-header">
+          <div class="exp-logo">
+            <span>GDG</span>
+          </div>
+          <div class="exp-info">
+            <h3>GDG Minya</h3>
+            <p class="exp-role">Frontend Development Course</p>
+            <p class="exp-date">2025</p>
+          </div>
+          <div class="exp-badge">Training</div>
+        </div>
+        <p class="exp-desc">
+          An intensive hands-on frontend development course organized by Google Developer
+          Groups Minya, covering modern web technologies and practical project building.
+        </p>
+        <div class="exp-skills">
+          <div class="exp-skill-item">
+            <div class="esi-icon">📄</div>
+            <span>HTML5</span>
+          </div>
+          <div class="exp-skill-item">
+            <div class="esi-icon">🎨</div>
+            <span>CSS3</span>
+          </div>
+          <div class="exp-skill-item">
+            <div class="esi-icon">⚡</div>
+            <span>JavaScript</span>
+          </div>
+          <div class="exp-skill-item">
+            <div class="esi-icon">📱</div>
+            <span>Responsive Design</span>
+          </div>
+          <div class="exp-skill-item">
+            <div class="esi-icon">🔧</div>
+            <span>Git & GitHub</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SOFT SKILLS SECTION ========== -->
+  <section id="softskills">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// 06</span>
+        <h2 class="section-title">Soft Skills</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="soft-grid">
+        <div class="soft-card glass reveal-up" data-delay="0">
+          <div class="soft-icon">🤝</div>
+          <h3>Teamwork</h3>
+          <p>Collaborating effectively in group projects and study teams to achieve shared goals.</p>
+        </div>
+        <div class="soft-card glass reveal-up" data-delay="80">
+          <div class="soft-icon">💬</div>
+          <h3>Communication</h3>
+          <p>Expressing technical concepts clearly to both technical and non-technical audiences.</p>
+        </div>
+        <div class="soft-card glass reveal-up" data-delay="160">
+          <div class="soft-icon">🏆</div>
+          <h3>Leadership</h3>
+          <p>Taking initiative and guiding peers through complex problems and challenges.</p>
+        </div>
+        <div class="soft-card glass reveal-up" data-delay="240">
+          <div class="soft-icon">⏱️</div>
+          <h3>Time Management</h3>
+          <p>Balancing coursework, training, and personal projects with structured planning.</p>
+        </div>
+        <div class="soft-card glass reveal-up" data-delay="320">
+          <div class="soft-icon">📚</div>
+          <h3>Self Learning</h3>
+          <p>Continuously acquiring new skills beyond the curriculum through independent study.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ACTIVITIES SECTION ========== -->
+  <section id="activities">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// 07</span>
+        <h2 class="section-title">Activities</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="activities-list">
+        <div class="activity-item glass reveal-up" data-delay="0">
+          <div class="activity-icon">🎯</div>
+          <div class="activity-content">
+            <h3>GDG Minya Workshops</h3>
+            <p>Attended multiple hands-on tech workshops organized by Google Developer Groups Minya, gaining exposure to industry trends and practices.</p>
+          </div>
+        </div>
+        <div class="activity-item glass reveal-up" data-delay="100">
+          <div class="activity-icon">👥</div>
+          <div class="activity-content">
+            <h3>Study Group Participation</h3>
+            <p>Actively participated in peer study groups, collaborating on problem-solving sessions and programming challenges with classmates.</p>
+          </div>
+        </div>
+        <div class="activity-item glass reveal-up" data-delay="200">
+          <div class="activity-icon">🧑‍💻</div>
+          <div class="activity-content">
+            <h3>Peer Mentoring</h3>
+            <p>Helped classmates understand programming concepts, debugging techniques, and course material — reinforcing my own knowledge in the process.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// 08</span>
+        <h2 class="section-title">Contact</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-intro reveal-up">
+          <h3 class="contact-heading">Let's build something<br/><span class="accent">together.</span></h3>
+          <p>Whether you have a project, opportunity, or just want to connect — my inbox is always open.</p>
+        </div>
+
+        <div class="contact-cards reveal-up">
+          <a href="mailto:mahmouedmostafa1234@gmail.com" class="contact-card glass">
+            <div class="cc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 8L12 14L22 8"/></svg>
+            </div>
+            <div class="cc-info">
+              <span class="cc-label">Email</span>
+              <span class="cc-value">mahmouedmostafa1234@gmail.com</span>
+            </div>
+            <span class="cc-arrow">↗</span>
+          </a>
+
+          <a href="tel:+201156263036" class="contact-card glass">
+            <div class="cc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6.62 10.79C7.06 11.68 7.64 12.5 8.37 13.23C9.1 13.96 9.92 14.54 10.81 14.98L12.41 13.38C12.69 13.1 13.08 13.02 13.43 13.13C14.55 13.5 15.75 13.7 17 13.7C17.55 13.7 18 14.15 18 14.7V17C18 17.55 17.55 18 17 18C9.27 18 3 11.73 3 4C3 3.45 3.45 3 4 3H6.3C6.85 3 7.3 3.45 7.3 4C7.3 5.25 7.5 6.45 7.87 7.57C7.97 7.92 7.89 8.31 7.62 8.59L6.62 10.79Z"/></svg>
+            </div>
+            <div class="cc-info">
+              <span class="cc-label">Phone</span>
+              <span class="cc-value">+20 115 626 3036</span>
+            </div>
+            <span class="cc-arrow">↗</span>
+          </a>
+
+          <a href="https://github.com/mahmouedmostafa1234-create" target="_blank" rel="noopener" class="contact-card glass">
+            <div class="cc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19C4 20.5 4 16.5 2 16M22 16C22 20 19 22 12 22C5 22 2 20 2 16C2 12 5 10 12 10C19 10 22 12 22 16Z"/><path d="M12 10V2M9 5L12 2L15 5"/></svg>
+            </div>
+            <div class="cc-info">
+              <span class="cc-label">GitHub</span>
+              <span class="cc-value">mahmouedmostafa1234-create</span>
+            </div>
+            <span class="cc-arrow">↗</span>
+          </a>
+
+          <div class="contact-card glass no-link">
+            <div class="cc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"/></svg>
+            </div>
+            <div class="cc-info">
+              <span class="cc-label">Location</span>
+              <span class="cc-value">Minya, Egypt 🇪🇬</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer">
+    <div class="footer-grid"></div>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="footer-logo">M<span class="accent">.</span>M</span>
+          <p>Mahmoud Mohammed Mostafa</p>
+          <p class="footer-sub">Computer Science Student · Aspiring Frontend Developer</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-socials">
+          <!-- GitHub -->
+          <a href="https://github.com/mahmouedmostafa1234-create" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </a>
+          <!-- Email -->
+          <a href="mailto:mahmouedmostafa1234@gmail.com" class="social-btn" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 8L12 14L22 8"/></svg>
+          </a>
+          <!-- Phone -->
+          <a href="tel:+201156263036" class="social-btn" aria-label="Phone">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6.62 10.79C7.06 11.68 7.64 12.5 8.37 13.23C9.1 13.96 9.92 14.54 10.81 14.98L12.41 13.38C12.69 13.1 13.08 13.02 13.43 13.13C14.55 13.5 15.75 13.7 17 13.7C17.55 13.7 18 14.15 18 14.7V17C18 17.55 17.55 18 17 18C9.27 18 3 11.73 3 4C3 3.45 3.45 3 4 3H6.3C6.85 3 7.3 3.45 7.3 4C7.3 5.25 7.5 6.45 7.87 7.57C7.97 7.92 7.89 8.31 7.62 8.59L6.62 10.79Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Mahmoud Mohammed Mostafa. Built with <span class="accent">♥</span> and pure HTML/CSS/JS.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
